@@ -3,6 +3,28 @@
 \renewcommand*{\nameyeardelim}{\addcomma\space}  % add comma between author and year
 \setcounter{tocdepth}{2}  % Exclude subsubsections from table of content
 
+% -------- Quoting ------------
+\usepackage{mdframed}
+\usepackage{xcolor}
+
+\mdfdefinestyle{MyShadeQuoteStyle}{%
+    leftmargin=15pt,
+    rightmargin=15pt,
+    backgroundcolor=gray!25,
+    linewidth=0pt,
+    skipbelow=\topskip,
+    skipabove=\topskip
+}
+
+\newenvironment{MyShadequote}[1][]{%
+    \ignorespaces%
+    \begin{mdframed}[style=MyShadeQuoteStyle,#1]%
+}{%
+    \end{mdframed}%
+    \ignorespacesafterend%
+}%
+% -------- \Quoting ------------
+
 \addbibresource{bibliography.bib}
 
 \title{Ligeti, Stockhausen and Koenig:\\Aesthetics of Electronic Music}
@@ -95,63 +117,89 @@ TODO Some introduction: Ligeti citations are self explanatory...
 \subsubsection{Hectic quality / Gesticulation / Deep-frozen expressionism}
 \label{subs:ligeti:hectic}
 
-I want to remove great, whirling passion, all grand expressive gestures, far away and view them at a distance.
-My generation's attitude comes into play here, a rejection of pathos and romanticism (p. 18).
+\begin{MyShadequote}
+  I want to remove great, whirling passion, all grand expressive gestures, far away and view them at a distance.
+  My generation's attitude comes into play here, a rejection of pathos and romanticism (p. 18).
+\end{MyShadequote}
 
-I deprive both pathos and expression of credibility, suddenly everything gets out of gear...
-If pathos in a gesture is excessive you can no longer perceive or register it (p. 19).
+\begin{MyShadequote}
+  I deprive both pathos and expression of credibility, suddenly everything gets out of gear...
+  If pathos in a gesture is excessive you can no longer perceive or register it (p. 19).
+\end{MyShadequote}
 
 \subsubsection{Machine like music / Meccanico-type}
 \label{subs:ligeti:machine}
 
-I have always been fascinated by machines that do not work properly...
-Transposed into music, the ticking of malfunctioning machinery occurs in many of my works (p. 16).
+\begin{MyShadequote}
+  I have always been fascinated by machines that do not work properly...
+  Transposed into music, the ticking of malfunctioning machinery occurs in many of my works (p. 16).
+\end{MyShadequote}
 
 \subsubsection{Micropolyphony}
 \label{subs:ligeti:micropolyphony}
 
-Both Atmospheres and Lontano have a dense canonic structure.
-But you cannot actually hear the polyphony, the canon.
-You hear a kind of impenetrable texture, something like a very densely woven cobweb.
-I have retained melodic lines in the process of composition, they are governed by rules as strict as Palestrina’s or those of the Flemish school...
-The polyphony structure does not come through, you cannot hear it; it remains hidden in a microscopic, under-water world, to us inaudible (p. 14-15).
+\begin{MyShadequote}
+  Both Atmospheres and Lontano have a dense canonic structure.
+  But you cannot actually hear the polyphony, the canon.
+  You hear a kind of impenetrable texture, something like a very densely woven cobweb.
+  I have retained melodic lines in the process of composition, they are governed by rules as strict as Palestrina’s or those of the Flemish school...
+  The polyphony structure does not come through, you cannot hear it; it remains hidden in a microscopic, under-water world, to us inaudible (p. 14-15).
+\end{MyShadequote}
 
 \subsubsection{Flexible rhythm}
 \label{subs:ligeti:flexible}
 
-What really interested me was flexible rhythm, giving up the pulsating metrical idiom (p. 36).
+\begin{MyShadequote}
+  What really interested me was flexible rhythm, giving up the pulsating metrical idiom (p. 36).
+\end{MyShadequote}
 
-I built the rhythmic shifts into the music.
-For instance, twenty-four violins would play the same tune but with a slight time-lag between them...
-No violinist can play them, all of them make mistakes, different mistakes all the time.
-These mistakes add up and create a floating, fluctuating patterns (p. 40).
+\begin{MyShadequote}
+  I built the rhythmic shifts into the music.
+  For instance, twenty-four violins would play the same tune but with a slight time-lag between them...
+  No violinist can play them, all of them make mistakes, different mistakes all the time.
+  These mistakes add up and create a floating, fluctuating patterns (p. 40).
+\end{MyShadequote}
 
-At the time I was interested in the idea of multilayered structures, polyrhythm, and beyond that different tempi, different speed all simultaneously executed (p. 62).
+\begin{MyShadequote}
+  At the time I was interested in the idea of multilayered structures, polyrhythm, and beyond that different tempi, different speed all simultaneously executed (p. 62).
+\end{MyShadequote}
 
 \subsubsection{Overwriting / Misleading notation}
 \label{subs:ligeti:overwriting}
 
-My reason for so ‘overwriting’ the score was to achieve the effect I wanted, a sense of danger (p.53).
+\begin{MyShadequote}
+  My reason for so ‘overwriting’ the score was to achieve the effect I wanted, a sense of danger (p.53).
+\end{MyShadequote}
 
-In a later piece, Ramifications, I divided the strings into two groups with quarter-tone difference in the intonation between them.
-This did not produce music based on quarter-tones; that was not my intention...
-The point is that as the two groups of strings, deliberately tuned apart from one another, go on playing the group tuned higher automatically slides downwards so that the two groups get nearer one another in pitch.
-That is what I wanted: not music based on quarter-tones but mistuned music (p. 54).
+\begin{MyShadequote}
+  In a later piece, Ramifications, I divided the strings into two groups with quarter-tone difference in the intonation between them.
+  This did not produce music based on quarter-tones; that was not my intention...
+  The point is that as the two groups of strings, deliberately tuned apart from one another, go on playing the group tuned higher automatically slides downwards so that the two groups get nearer one another in pitch.
+  That is what I wanted: not music based on quarter-tones but mistuned music (p. 54).
+\end{MyShadequote}
 
-...There will be hardly any difference between various performances; the smudginess both in intonation and in rhythm gives the same result, the same degree of ‘dirtiness’ (p. 55).
+\begin{MyShadequote}
+  ...There will be hardly any difference between various performances; the smudginess both in intonation and in rhythm gives the same result, the same degree of ‘dirtiness’ (p. 55).
+\end{MyShadequote}
 
-...The passages written in small notes simply indicates that the player should execute them as fast as he can.
-That is why I said that the instrumentalist were not given much freedom; what I kept under control was the overall sound texture at any one time (p. 63).
+\begin{MyShadequote}
+  ...The passages written in small notes simply indicates that the player should execute them as fast as he can.
+  That is why I said that the instrumentalist were not given much freedom; what I kept under control was the overall sound texture at any one time (p. 63).
+\end{MyShadequote}
 
 \subsubsection{``Mistiness'' to ``clearing-up'' process}
 \label{subs:ligeti:mistiness}
 
-My idea was that instead of tension-resolution, dissonance-consonance, dominant-tonic, pairs of opposition in traditional tonal music, I would contrast ``mistiness'' with passages of ``clearing-up''. ``Mistiness'' usually means a contrapuntal texture, a micropolyphonic cobweb technique; the perfect interval appears in the texture first as a hint and then gradually becomes the dominant feature (p. 60).
+\begin{MyShadequote}
+  My idea was that instead of tension-resolution, dissonance-consonance, dominant-tonic, pairs of opposition in traditional tonal music, I would contrast ``mistiness'' with passages of ``clearing-up''. ``Mistiness'' usually means a contrapuntal texture, a micropolyphonic cobweb technique; the perfect interval appears in the texture first as a hint and then gradually becomes the dominant feature (p. 60).
+\end{MyShadequote}
 
 \subsection{Stockhausen}
 \label{sub:eshtetic_stockhausen}
 
-On several previous occasions, when I have been asked to explain the composition of electronic music, I have described four characteristics that seem important to me for electronic composition as distinguished from the composition of instrumental music:
+\begin{MyShadequote}
+  On several previous occasions, when I have been asked to explain the composition of electronic music, I have described four characteristics that seem important to me for electronic composition as distinguished from the composition of instrumental music:
+\end{MyShadequote}
 
 \subsubsection{The correlation of the coloristic, harmonic-melodic, and metric-rhythmic aspects of composition}
 \label{subs:stockhausen:time}
