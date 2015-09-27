@@ -9,28 +9,26 @@
 \usepackage{mdframed}
 \usepackage{xcolor}
 
-\mdfdefinestyle{MyShadeQuoteStyle}{%
+\mdfdefinestyle{MyShadeQuoteStyle}{
     leftmargin=15pt,
     rightmargin=15pt,
-    backgroundcolor=gray!25,
+    backgroundcolor=gray!15,
     linewidth=0pt,
-    skipbelow=\topskip,
-    skipabove=\topskip
 }
 
-\newenvironment{MyShadequote}[1][]{%
-    \ignorespaces%
-    \begin{mdframed}[style=MyShadeQuoteStyle,#1]%
-}{%
-    \end{mdframed}%
-    \ignorespacesafterend%
-}%
+\newenvironment{MyShadequote}[1][]
+    {\begin{mdframed}[style=MyShadeQuoteStyle,#1]}
+    {\end{mdframed}}
 % -------- \Quoting ------------
 
 \addbibresource{bibliography.bib}
 
 \title{Ligeti, Stockhausen and Koenig:\\Aesthetics of Electronic Music}
 \author{Tom Gurion}
+
+% Prevent text from go over the right margin.
+% http://tex.stackexchange.com/a/9110/42891
+\sloppy
 
 \begin{document}
 
